@@ -1,0 +1,124 @@
+/*Підключено стильову таблицю, розташовану у зовнішньому CSS-файлі.*/
+
+/*Використання селектору класів*/
+.monospfont{
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    color: grey;
+    font-weight: normal; /* Зазвичай, моноширинні шрифти не потребують жирності */
+    font-style: normal; /* Зазвичай, моноширинні шрифти не потребують курсиву */
+}
+
+/*Використання селектору тегів*/
+
+h2{
+    color: maroon;
+}
+
+/*Використання селектору ідентифікаторів*/
+#source_code{
+    font-family: "Consolas", monospace;
+    font-size: 12px;
+    color: black;
+}
+
+.container{
+    width: 300px;
+    height: 200px;
+    background-color: darkgray;
+    border: 2px solid greenyellow;
+    position: relative;
+}
+
+.box{
+    width: 100px;
+    height: 50px;
+    background-color: antiquewhite;
+    border: 2px solid yellow;
+    /*Використано абсолютне фіксування відносно container*/
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+/*Використання float для стилізації навігаційних елементів*/
+
+/*Застосування стилів до елементів класу "navig"*/
+.navig{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/*Комбінований селектор, що застосовує стилі до тегів li, 
+що є нащадками елемента з класом “navig”.*/
+.navig li{
+    float: left;    /*Розташування елементів списку горизонтально*/
+}
+
+/*Застосування стилі до тегів a, що є нащадками елемента li, 
+який, у свою чергу, є нащадком елемента з класу “navig”.*/
+.navig li a{
+    display: block;
+    color: green;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*Застосування стилю до елемента a при наведенні курсору, 
+якщо цей елемент є нащадком елемента li, 
+який є нащадком елемента з класом “nav”.*/
+.navig li a:hover{
+    background-color: blue;
+}
+
+/*Селектори для шостого завдання (частина 1)*/
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"] + label{
+    background-color: lightgray;
+    padding: 10px;
+    display: inline-block;
+}
+
+input[type="checkbox"]:checked + label{
+    background-color: red;
+}
+
+/*Селектори для шостого завдання (частина 2)*/
+.field{
+    display: flex;
+    flex-wrap: wrap;
+    width: 610px;
+    border: 1px solid black;
+}
+
+.rectangle{
+    width: 50px;
+    height: 100px;
+    margin: 10px;
+    background-color: yellow;
+}
+
+/*Застосування псевдокласу стилізації для деяких
+прямокутників*/
+
+.rectangle:nth-child(1), .rectangle:last-child{
+    background-color: green;
+}
+
+.rectangle:nth-child(8){
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: yellow;
+}
+
+.rectangle:last-child{
+    flex-grow: 1;
+}

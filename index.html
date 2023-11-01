@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style4index.css">
+    <style>
+        /*Задання стилю за допомогою контейнера 
+        <style> у секції заголовка;*/
+        .block{
+            width: auto;
+            margin: 0 auto;
+            padding: 20px;
+            background-color:cadetblue;
+            border: 1px solid #999;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>Лабораторна роботи №2. Варіант №0.</h2>
+
+    <!--Використання inline-опис стилю-->
+    <h3 style="color: darkgoldenrod;">Використання inline-опису стилю</h3>
+
+    <div class="block">
+        <p>Приклад блокового елементу з довільним вмістом, <br> 
+            для виконання другої лабораторної роботи. <br> 
+            Використано CSS для оформлення блокових контейнерів.<br>
+        </p>
+    </div>
+
+    <h3 class = "monospfont"> Приклад прогорами знаходження найбільшого спільного дільника на C++</h3>
+
+    <div id="source_code">
+        unsigned int greatest_common_divisor(unsigned int a, unsigned int b) <br>{<br>
+            &nbsp if (a == b) <br>
+            &nbsp &nbsp return a; <br>
+            &nbsp if (a > b) <br>
+            &nbsp &nbsp return greatest_common_divisor(a-b, b); <br>
+            return greatest_common_divisor(a, b-a); <br>
+          } <br>
+    </div>
+
+    <h3> Завдання №4.</h3>
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+    <h3> Завдання №5.</h3>
+
+    <!--Список з навігаційними елементами-->
+    <ul class="navig">
+        <li><a href="#home">Головна</a></li>
+        <li><a href="#news">Новини</a></li>
+        <li><a href="#contact">Контакти</a></li>
+    </ul>
+
+    <h3>Завдання №6.</h3>
+
+    <input type="checkbox" id="check1">
+    <label for="check1">Мітка 1</label>
+
+    <input type="checkbox" id="check2">
+    <label for="check2">Мітка 2</label>
+
+    <input type="checkbox" id="check3">
+    <label for="check3">Мітка 3</label>
+
+    <div class="field">
+        <div class="rectangle">1</div>
+        <div class="rectangle">2</div>
+        <div class="rectangle">3</div>
+        <div class="rectangle">4</div>
+        <div class="rectangle">5</div>
+        <div class="rectangle">6</div>
+        <div class="rectangle">7</div>
+        <div class="rectangle">8</div>
+        <div class="rectangle">9</div>
+    </div>
+
+</body>
+</html>
