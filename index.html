@@ -34,13 +34,16 @@
     <h3 class = "monospfont"> Приклад прогорами знаходження найбільшого спільного дільника на C++</h3>
 
     <div id="source_code">
-        unsigned int greatest_common_divisor(unsigned int a, unsigned int b) <br>{<br>
-            &nbspif (a == b) <br>
-            &nbsp&nbspreturn a; <br>
-            &nbspif (a > b) <br>
-            &nbsp&nbspreturn greatest_common_divisor(a-b, b); <br>
+        <pre>
+            unsigned int greatest_common_divisor(unsigned int a, unsigned int b) <br>
+            {<br>
+                if (a == b) <br>
+                    return a; <br>
+                if (a > b) <br>
+                    return greatest_common_divisor(a-b, b); <br>
             return greatest_common_divisor(a, b-a); <br>
-          } <br>
+            } <br>
+        </pre>
     </div>
 
     <h3> Завдання №4.</h3>
